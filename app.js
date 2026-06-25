@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 const MONGODB_SECRET_URL = process.env.MONGODB_SECRET_URL;
-const PORT = process.env.PORT_MAIN;
+const PORT = process.env.PORT || process.env.PORT_MAIN || 3000;
 
 mongoose
   .connect(MONGODB_SECRET_URL)
