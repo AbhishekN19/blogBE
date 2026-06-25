@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Post = require("../models/Post");
-const Comment = require("../models/Comment");
+const Comment = require("../models/Comments");
 const { authMiddleware } = require("../middleware/auth");
 const validate = require("../middleware/validate");
 const { postSchema, commentSchema } = require("../validators/schemas");
