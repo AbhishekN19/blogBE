@@ -16,6 +16,7 @@ mongoose
 // Routes
 app.get("/health", (req, res) => res.status(200).send("OK"));
 app.use("/", require("./routes/auth"));
+app.use("/api/v1", require("./routes/auth"));
 app.use("/api/v1/posts", require("./routes/posts"));
 
 // 404 handler
