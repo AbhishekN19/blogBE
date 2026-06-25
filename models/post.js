@@ -12,7 +12,7 @@ const postSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
-
+//update
 const Post = mongoose.model("Post", postSchema);
 
 module.exports = Post;
