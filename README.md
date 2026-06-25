@@ -27,8 +27,8 @@ A RESTful API for a blog platform built with Node.js, Express, MongoDB, and JWT 
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/blog-api.git
-cd blog-api
+git clone https://github.com/AbhishekN19/blogBE.git
+cd blogBE
 npm install
 ```
 
