@@ -1,5 +1,4 @@
-const { z } = require("zod");
-
+import { z } from "zod";
 const registerSchema = z.object({
   username: z
     .string()
@@ -24,4 +23,4 @@ const commentSchema = z.object({
     .max(500, "comment can only be 500 characters long"),
 });
 
-module.exports = { registerSchema, postSchema, commentSchema };
+export { registerSchema, postSchema, commentSchema };
